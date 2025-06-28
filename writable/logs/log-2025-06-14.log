@@ -1,0 +1,1076 @@
+DEBUG - 2025-06-14 06:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-14 06:29:30 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-062624_CreateApplicationForm.php(43): CodeIgniter\Database\Forge->createTable('form_templates')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplates->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 06:30:13 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-062624_CreateApplicationForm.php(43): CodeIgniter\Database\Forge->createTable('form_templates')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplates->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 06:30:38 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-062624_CreateApplicationForm.php(43): CodeIgniter\Database\Forge->createTable('form_templates')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplates->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 06:31:01 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-062955_CreateFormTemplates.php(43): CodeIgniter\Database\Forge->createTable('form_templates')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplates->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 06:31:23 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-062955_CreateFormTemplates.php(43): CodeIgniter\Database\Forge->createTable('form_templates')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplates->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 06:31:50 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-062955_CreateFormTemplates.php(43): CodeIgniter\Database\Forge->createTable('form_templates')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplates->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 06:32:38 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-062955_CreateFormTemplates.php(43): CodeIgniter\Database\Forge->createTable('form_templates')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplates->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 06:33:18 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-062955_CreateFormTemplates.php(43): CodeIgniter\Database\Forge->createTable('form_templates')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplates->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 06:33:39 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-062955_CreateFormTemplates.php(43): CodeIgniter\Database\Forge->createTable('form_templates')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplates->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 06:35:59 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-063541_CreateFormTemplates.php(43): CodeIgniter\Database\Forge->createTable('form_templates')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplates->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 06:37:43 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-063713_CreateFormTemplates.php(43): CodeIgniter\Database\Forge->createTable('formTemplate')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplates->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 06:38:47 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-063713_CreateFormTemplates.php(43): CodeIgniter\Database\Forge->createTable('formTemplate')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplates->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 06:39:38 --> mysqli_sql_exception: Invalid default value for 'created_at' in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-063713_CreateFormTemplates.php(43): CodeIgniter\Database\Forge->createTable('formTemplate')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplates->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+DEBUG - 2025-06-14 06:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-14 06:58:29 --> user_id from session: "27"
+DEBUG - 2025-06-14 06:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 06:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:01:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-14 07:01:49 --> mysqli_sql_exception: Table 'projexia.project_members' doesn't exist in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projexia\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projexia\app\Models\user\ProjectModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projexia\app\Controllers\Admin\ProjectController.php(29): App\Models\user\ProjectModel->getMembersByProjectId('3')
+#6 C:\xampp\htdocs\projexia\system\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('3')
+#7 C:\xampp\htdocs\projexia\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+#8 C:\xampp\htdocs\projexia\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projexia\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\projexia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\projexia\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-14 07:01:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'projexia.project_members' doesn't exist
+[Method: GET, Route: admin/projects/detay/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `project_members`
+WHERE `project_id` = :project_id:', [...], false)
+ 2 APPPATH\Models\user\ProjectModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin\ProjectController.php(29): App\Models\user\ProjectModel->getMembersByProjectId('3')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('3')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-14 07:01:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'projexia.project_members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `project_members`
+WHERE `project_id` = \'3\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `project_members`
+WHERE `project_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `project_members`
+WHERE `project_id` = :project_id:', [...], false)
+ 4 APPPATH\Models\user\ProjectModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin\ProjectController.php(29): App\Models\user\ProjectModel->getMembersByProjectId('3')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-14 07:01:49 --> [Caused by] mysqli_sql_exception: Table 'projexia.project_members' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `project_members`
+WHERE `project_id` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `project_members`
+WHERE `project_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `project_members`
+WHERE `project_id` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `project_members`
+WHERE `project_id` = :project_id:', [...], false)
+ 5 APPPATH\Models\user\ProjectModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin\ProjectController.php(29): App\Models\user\ProjectModel->getMembersByProjectId('3')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('3')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 07:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-14 07:02:05 --> mysqli_sql_exception: Table 'projexia.topic' doesn't exist in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projexia\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projexia\app\Models\user\ProjectModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projexia\app\Controllers\Admin\ProjectController.php(29): App\Models\user\ProjectModel->getMembersByProjectId('3')
+#6 C:\xampp\htdocs\projexia\system\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('3')
+#7 C:\xampp\htdocs\projexia\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+#8 C:\xampp\htdocs\projexia\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projexia\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\projexia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\projexia\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-14 07:02:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'projexia.topic' doesn't exist
+[Method: GET, Route: admin/projects/detay/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `topic`
+WHERE `project_id` = :project_id:', [...], false)
+ 2 APPPATH\Models\user\ProjectModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin\ProjectController.php(29): App\Models\user\ProjectModel->getMembersByProjectId('3')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('3')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-14 07:02:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'projexia.topic' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `topic`
+WHERE `project_id` = \'3\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `topic`
+WHERE `project_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `topic`
+WHERE `project_id` = :project_id:', [...], false)
+ 4 APPPATH\Models\user\ProjectModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin\ProjectController.php(29): App\Models\user\ProjectModel->getMembersByProjectId('3')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-14 07:02:05 --> [Caused by] mysqli_sql_exception: Table 'projexia.topic' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `topic`
+WHERE `project_id` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `topic`
+WHERE `project_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `topic`
+WHERE `project_id` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `topic`
+WHERE `project_id` = :project_id:', [...], false)
+ 5 APPPATH\Models\user\ProjectModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin\ProjectController.php(29): App\Models\user\ProjectModel->getMembersByProjectId('3')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('3')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 07:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 07:02:28 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: admin/projects/detay/3]
+in APPPATH\Views\admin\projectDetail.php on line 140.
+ 1 APPPATH\Views\admin\projectDetail.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\projexia\\app\\Views\\admin\\projectDetail.php', 140)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projexia\\app\\Views\\admin\\projectDetail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/projectDetail', [], true)
+ 5 APPPATH\Controllers\Admin\ProjectController.php(32): view('admin/projectDetail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 07:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 07:02:50 --> ErrorException: Undefined array key "role"
+[Method: GET, Route: admin/projects/detay/3]
+in APPPATH\Views\admin\projectDetail.php on line 140.
+ 1 APPPATH\Views\admin\projectDetail.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'C:\\xampp\\htdocs\\projexia\\app\\Views\\admin\\projectDetail.php', 140)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projexia\\app\\Views\\admin\\projectDetail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/projectDetail', [], true)
+ 5 APPPATH\Controllers\Admin\ProjectController.php(32): view('admin/projectDetail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 07:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 07:03:07 --> ErrorException: Undefined array key "file_name"
+[Method: GET, Route: admin/projects/detay/3]
+in APPPATH\Views\admin\projectDetail.php on line 160.
+ 1 APPPATH\Views\admin\projectDetail.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file_name"', 'C:\\xampp\\htdocs\\projexia\\app\\Views\\admin\\projectDetail.php', 160)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projexia\\app\\Views\\admin\\projectDetail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/projectDetail', [], true)
+ 5 APPPATH\Controllers\Admin\ProjectController.php(32): view('admin/projectDetail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 07:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 07:03:19 --> ErrorException: Undefined array key "uploaded_at"
+[Method: GET, Route: admin/projects/detay/3]
+in APPPATH\Views\admin\projectDetail.php on line 161.
+ 1 APPPATH\Views\admin\projectDetail.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "uploaded_at"', 'C:\\xampp\\htdocs\\projexia\\app\\Views\\admin\\projectDetail.php', 161)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projexia\\app\\Views\\admin\\projectDetail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/projectDetail', [], true)
+ 5 APPPATH\Controllers\Admin\ProjectController.php(32): view('admin/projectDetail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 07:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-14 07:08:02 --> mysqli_sql_exception: Unknown table 'projexia.project_editors' in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('DROP TABLE `pro...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `pro...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `pro...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(663): CodeIgniter\Database\BaseConnection->query('DROP TABLE `pro...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-070627_CreateProjectEditorsTable.php(53): CodeIgniter\Database\Forge->dropTable('project_editors')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateProjectEditorsTable->down()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(289): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\MigrateRollback.php(101): CodeIgniter\Database\MigrationRunner->regress(4)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 07:12:58 --> mysqli_sql_exception: Unknown table 'projexia.editors' in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('DROP TABLE `edi...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `edi...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `edi...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(663): CodeIgniter\Database\BaseConnection->query('DROP TABLE `edi...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-070627_CreateProjectEditorsTable.php(53): CodeIgniter\Database\Forge->dropTable('editors')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateProjectEditorsTable->down()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(289): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\MigrateRollback.php(101): CodeIgniter\Database\MigrationRunner->regress(4)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 07:17:39 --> mysqli_sql_exception: Can't create table `projexia`.`project_editors` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-071704_CreateProjectEditorsTable.php(46): CodeIgniter\Database\Forge->createTable('project_editors')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateProjectEditorsTable->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 07:22:42 --> mysqli_sql_exception: Can't create table `projexia`.`project_editors` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-071704_CreateProjectEditorsTable.php(46): CodeIgniter\Database\Forge->createTable('project_editors')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateProjectEditorsTable->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 07:23:58 --> mysqli_sql_exception: Can't create table `projexia`.`project_editors` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-071704_CreateProjectEditorsTable.php(46): CodeIgniter\Database\Forge->createTable('project_editors')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateProjectEditorsTable->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+DEBUG - 2025-06-14 07:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 07:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 08:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 08:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 08:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-14 08:40:47 --> mysqli_sql_exception: Table 'formtemplate' already exists in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-084002_CreateFormTemplateTable.php(43): CodeIgniter\Database\Forge->createTable('formtemplate')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplatesAndValues->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 08:41:51 --> mysqli_sql_exception: Table 'formtemplate' already exists in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-084002_CreateFormTemplateTable.php(43): CodeIgniter\Database\Forge->createTable('formTemplate')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplatesAndValues->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 08:42:32 --> mysqli_sql_exception: Can't create table `projexia`.`formtemplate_values` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-084002_CreateFormTemplateTable.php(76): CodeIgniter\Database\Forge->createTable('formtemplate_va...')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplatesAndValues->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 08:43:40 --> mysqli_sql_exception: Can't create table `projexia`.`formtemplate_values` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-084002_CreateFormTemplateTable.php(75): CodeIgniter\Database\Forge->createTable('formtemplate_va...')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplatesAndValues->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 09:11:17 --> mysqli_sql_exception: Can't create table `projexia`.`formtemplate_values` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-084002_CreateFormTemplateTable.php(75): CodeIgniter\Database\Forge->createTable('formtemplate_va...')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplatesAndValues->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+DEBUG - 2025-06-14 09:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:16:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 11:22:49 --> ErrorException: Type of App\Models\FormTemplateModel::$casts must be array (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: admin/projects/detay/7]
+in APPPATH\Models\FormTemplateModel.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-06-14 11:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 11:25:14 --> ErrorException: Type of App\Models\FormTemplateModel::$casts must be array (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: admin/projects/detay/4]
+in APPPATH\Models\FormTemplateModel.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-06-14 11:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 11:26:23 --> ErrorException: Undefined array key "template_code"
+[Method: GET, Route: admin/projects/detay/4]
+in APPPATH\Controllers\Admin\ProjectController.php on line 36.
+ 1 APPPATH\Controllers\Admin\ProjectController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "template_code"', 'C:\\xampp\\htdocs\\projexia\\app\\Controllers\\Admin\\ProjectController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('4')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 11:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 11:33:24 --> ErrorException: Undefined array key "template_code"
+[Method: GET, Route: admin/projects/detay/4]
+in APPPATH\Controllers\Admin\ProjectController.php on line 36.
+ 1 APPPATH\Controllers\Admin\ProjectController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "template_code"', 'C:\\xampp\\htdocs\\projexia\\app\\Controllers\\Admin\\ProjectController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('4')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 11:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 11:33:26 --> ErrorException: Undefined array key "template_code"
+[Method: GET, Route: admin/projects/detay/4]
+in APPPATH\Controllers\Admin\ProjectController.php on line 36.
+ 1 APPPATH\Controllers\Admin\ProjectController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "template_code"', 'C:\\xampp\\htdocs\\projexia\\app\\Controllers\\Admin\\ProjectController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('4')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 11:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 11:34:09 --> ErrorException: Undefined array key "template_code"
+[Method: GET, Route: admin/projects/detay/8]
+in APPPATH\Controllers\Admin\ProjectController.php on line 36.
+ 1 APPPATH\Controllers\Admin\ProjectController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "template_code"', 'C:\\xampp\\htdocs\\projexia\\app\\Controllers\\Admin\\ProjectController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('8')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 11:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 11:35:18 --> ErrorException: Undefined array key "template_code"
+[Method: GET, Route: admin/projects/detay/8]
+in APPPATH\Controllers\Admin\ProjectController.php on line 36.
+ 1 APPPATH\Controllers\Admin\ProjectController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "template_code"', 'C:\\xampp\\htdocs\\projexia\\app\\Controllers\\Admin\\ProjectController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('8')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 11:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 11:35:19 --> ErrorException: Undefined array key "template_code"
+[Method: GET, Route: admin/projects/detay/8]
+in APPPATH\Controllers\Admin\ProjectController.php on line 36.
+ 1 APPPATH\Controllers\Admin\ProjectController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "template_code"', 'C:\\xampp\\htdocs\\projexia\\app\\Controllers\\Admin\\ProjectController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('8')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 11:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 11:35:58 --> ErrorException: Undefined array key "template_code"
+[Method: GET, Route: admin/projects/detay/8]
+in APPPATH\Controllers\Admin\ProjectController.php on line 36.
+ 1 APPPATH\Controllers\Admin\ProjectController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "template_code"', 'C:\\xampp\\htdocs\\projexia\\app\\Controllers\\Admin\\ProjectController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('8')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 11:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 11:35:58 --> ErrorException: Undefined array key "template_code"
+[Method: GET, Route: admin/projects/detay/8]
+in APPPATH\Controllers\Admin\ProjectController.php on line 36.
+ 1 APPPATH\Controllers\Admin\ProjectController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "template_code"', 'C:\\xampp\\htdocs\\projexia\\app\\Controllers\\Admin\\ProjectController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->projectdetay('8')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 11:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 11:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 12:00:01 --> ErrorException: Type of App\Models\FormTemplateModel::$casts must be array (as in class CodeIgniter\BaseModel)
+[Method: GET, Route: admin/projects/detay/8]
+in APPPATH\Models\FormTemplateModel.php on line 6.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-06-14 12:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:18:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 12:23:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/projectDetail.php"
+[Method: GET, Route: user/projects/detay/6]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/projectDetail.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/projectDetail', [], true)
+ 3 APPPATH\Controllers\User\UserController.php(66): view('user/projectDetail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User\UserController->projectdetay('6')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 12:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 12:34:14 --> ErrorException: Undefined variable $projects
+[Method: GET, Route: admin/kullanicilar]
+in APPPATH\Views\admin\kullanicilar.php on line 26.
+ 1 APPPATH\Views\admin\kullanicilar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $projects', 'C:\\xampp\\htdocs\\projexia\\app\\Views\\admin\\kullanicilar.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projexia\\app\\Views\\admin\\kullanicilar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/kullanicilar', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(13): view('admin/kullanicilar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\AdminController->kullanicilar()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 12:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 12:34:59 --> ErrorException: Undefined variable $projects
+[Method: GET, Route: admin/kullanicilar]
+in APPPATH\Views\admin\kullanicilar.php on line 26.
+ 1 APPPATH\Views\admin\kullanicilar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $projects', 'C:\\xampp\\htdocs\\projexia\\app\\Views\\admin\\kullanicilar.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\projexia\\app\\Views\\admin\\kullanicilar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/kullanicilar', [], true)
+ 5 APPPATH\Controllers\Admin\AdminController.php(13): view('admin/kullanicilar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\AdminController->kullanicilar()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 12:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 12:56:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/kullanici/edit.php"
+[Method: GET, Route: admin/kullanici/edit/27]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/kullanici/edit.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/kullanici/edit', [], true)
+ 3 APPPATH\Controllers\Admin\AdminController.php(39): view('admin/kullanici/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\AdminController->edit('27')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 12:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 12:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 13:25:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/kullanici/view.php"
+[Method: GET, Route: admin/kullanici/view/27]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/kullanici/view.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/kullanici/view', [], true)
+ 3 APPPATH\Controllers\Admin\AdminController.php(28): view('admin/kullanici/view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\AdminController->view('27')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 13:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-14 13:25:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/kullanici/view.php"
+[Method: GET, Route: admin/kullanici/view/27]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/kullanici/view.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/kullanici/view', [], true)
+ 3 APPPATH\Controllers\Admin\AdminController.php(28): view('admin/kullanici/view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\AdminController->view('27')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-14 13:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:28:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:28:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 13:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 14:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 14:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 14:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-14 14:15:15 --> mysqli_sql_exception: Can't create table `projexia`.`formtemplate_values` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `f...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `f...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `f...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `f...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-084002_CreateFormTemplateTable.php(75): CodeIgniter\Database\Forge->createTable('formtemplate_va...')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateFormTemplatesAndValues->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 14:17:36 --> mysqli_sql_exception: Can't create table `projexia`.`user_roles` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-141349_CreateRolesAndUserRolesTables.php(54): CodeIgniter\Database\Forge->createTable('user_roles')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateRolesAndUserRolesTables->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 14:19:31 --> mysqli_sql_exception: Table 'roles' already exists in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `r...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `r...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `r...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `r...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-141349_CreateRolesAndUserRolesTables.php(38): CodeIgniter\Database\Forge->createTable('roles')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateRolesAndUserRolesTables->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-14 14:22:17 --> mysqli_sql_exception: Table 'roles' already exists in C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\projexia\system\Database\MySQLi\Connection.php(327): mysqli->query('CREATE TABLE `r...', 0)
+#1 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `r...')
+#2 C:\xampp\htdocs\projexia\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `r...')
+#3 C:\xampp\htdocs\projexia\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `r...')
+#4 C:\xampp\htdocs\projexia\app\Database\Migrations\2025-06-14-141349_CreateRolesAndUserRolesTables.php(38): CodeIgniter\Database\Forge->createTable('roles')
+#5 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(876): App\Database\Migrations\CreateRolesAndUserRolesTables->up()
+#6 C:\xampp\htdocs\projexia\system\Database\MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\projexia\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\projexia\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\projexia\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\projexia\system\Boot.php(360): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\projexia\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\projexia\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+DEBUG - 2025-06-14 15:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-14 15:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
