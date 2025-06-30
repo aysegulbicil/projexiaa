@@ -20,6 +20,9 @@ $routes->group('', ['filter' => 'loginFilter'], function ($routes) {
     $routes->get('/', 'User\UserController::index'); // varsayılan yönlendirme
     $routes->get('projeekle', 'User\ProjectController::projeekle');
     $routes->post('save', 'User\ProjectController::save');
+    $routes->get('duzenle/(:num)', 'User\ProjectController::edit/$1');
+    $routes->post('duzenle', 'User\ProjectController::duzenle');
+
 });
 
 

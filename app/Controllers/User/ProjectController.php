@@ -160,6 +160,188 @@ class ProjectController extends BaseController
         ]);
     }
 
+
+
+
+    public function edit($id)
+{
+    $model = new ProjectModel();
+    $project = $model->find($id);
+    if (!$project) {
+        throw new \CodeIgniter\Exceptions\PageNotFoundException('Proje bulunamadı.');
+    }
+
+    $editorModel = new ProjectEditorModel();
+    $editors = $editorModel->where('project_id', $id)->findAll();
+
+    return view('users/projeDuzenle', [
+        'project' => $project,
+        'editors' => $editors
+    ]);
+}
+
+    public function duzenle()
+{
+    $model = new ProjectModel();
+    $editorModel = new ProjectEditorModel();
+    $formDataModel = new \App\Models\FormDataModel();
+
+    $templateCode = getenv('APP_TEMPLATE') ?: 'default';
+
+    $file = $this->request->getFile('file');
+    $fileName = null;
+
+    // Zorunlu: Güncellenecek projenin ID'si POST'tan gelmeli
+    $projectId = $this->request->getPost('project_id');
+    if (!$projectId) {
+        return $this->response->setJSON([
+            'status' => 'error',
+            'message' => 'Proje ID bulunamadı.'
+        ]);
+    }
+
+    // Dosya yüklendiyse işle
+    if ($file && $file->isValid() && !$file->hasMoved()) {
+        $fileName = $file->getRandomName();
+        $file->move(WRITEPATH . 'uploads', $fileName);
+    }
+
+    $session = session();
+    $userId = $session->get('user_id');
+
+    $data = [
+        'user_id'              => $userId,
+        'project_name'         => $this->request->getPost('project_name'),
+        'unit'                 => $this->request->getPost('unit'),
+        'location'             => $this->request->getPost('location'),
+        'subject'              => $this->request->getPost('subject'),
+        'subject_other'        => $this->request->getPost('subject_other'),
+        'institutions'         => $this->request->getPost('institutions'),
+        'target_audience'      => $this->request->getPost('target_audience'),
+        'purpose'              => $this->request->getPost('purpose'),
+        'topic'                => $this->request->getPost('topic'),
+        'summary'              => $this->request->getPost('summary'),
+        'activity_description' => $this->request->getPost('activity_description'),
+        'expected_results'     => $this->request->getPost('expected_results'),
+        'why_implement'        => $this->request->getPost('why_implement'),
+        'start_date'           => $this->request->getPost('start_date'),
+        'end_date'             => $this->request->getPost('end_date'),
+    ];
+
+    // Eğer yeni dosya geldiyse 'documentation' alanını güncelle, yoksa değiştirme
+    if ($fileName) {
+        $data['documentation'] = $fileName;
+    }
+
+    // Projeyi güncelle
+    $updated = $model->update($projectId, $data);
+
+    if (!$updated) {
+        return $this->response->setJSON([
+            'status' => 'error',
+            'message' => 'Proje güncelleme işlemi başarısız oldu!'
+        ]);
+    }
+
+    // Önce eski form_data kayıtlarını sil (proje_id ve template_code bazlı)
+    $formDataModel->where('project_id', $projectId)->where('template_code', $templateCode)->delete();
+
+    // Form verilerini tekrar kaydet
+    $formValues = [
+        'project_name'         => ['type' => 'text'],
+        'unit'                 => ['type' => 'text'],
+        'location'             => ['type' => 'text'],
+        'subject'              => ['type' => 'select'],
+        'subject_other'        => ['type' => 'text'],
+        'institutions'         => ['type' => 'select'],
+        'target_audience'      => ['type' => 'select'],
+        'purpose'              => ['type' => 'textarea'],
+        'topic'                => ['type' => 'textarea'],
+        'summary'              => ['type' => 'textarea'],
+        'activity_description' => ['type' => 'textarea'],
+        'expected_results'     => ['type' => 'textarea'],
+        'why_implement'        => ['type' => 'textarea'],
+        'start_date'           => ['type' => 'date'],
+        'end_date'             => ['type' => 'date'],
+    ];
+
+    foreach ($formValues as $name => $meta) {
+        $value = $this->request->getPost($name);
+        $formDataModel->insert([
+            'project_id'    => $projectId,
+            'name'          => $name,
+            'type'          => $meta['type'],
+            'value'         => $value,
+            'template_code' => $templateCode,
+        ]);
+    }
+
+    if ($fileName) {
+        $formDataModel->insert([
+            'project_id'    => $projectId,
+            'name'          => 'file',
+            'type'          => 'file',
+            'value'         => $fileName,
+            'template_code' => $templateCode,
+        ]);
+    }
+
+    // Editörleri güncelle
+    // Önce eski editörleri sil
+    $editorModel->where('project_id', $projectId)->delete();
+
+    $emails = $this->request->getPost('editorEmail');
+    $names = $this->request->getPost('editorName');
+    $appellations = $this->request->getPost('editorAppellation');
+
+    if (is_array($emails)) {
+        foreach ($emails as $index => $email) {
+            if (empty(trim($email)) && empty(trim($names[$index] ?? ''))) {
+                continue;
+            }
+
+            $editorData = [
+                'project_id'  => $projectId,
+                'email'       => $email,
+                'name'        => $names[$index] ?? null,
+                'appellation' => $appellations[$index] ?? null,
+                'created_at'  => date('Y-m-d H:i:s'),
+                'updated_at'  => date('Y-m-d H:i:s'),
+            ];
+            $editorModel->insert($editorData);
+
+            $formDataModel->insert([
+                'project_id'    => $projectId,
+                'name'          => "editor_name_$index",
+                'type'          => 'text',
+                'value'         => $names[$index] ?? '',
+                'template_code' => $templateCode,
+            ]);
+            $formDataModel->insert([
+                'project_id'    => $projectId,
+                'name'          => "editor_email_$index",
+                'type'          => 'text',
+                'value'         => $email,
+                'template_code' => $templateCode,
+            ]);
+            $formDataModel->insert([
+                'project_id'    => $projectId,
+                'name'          => "editor_appellation_$index",
+                'type'          => 'text',
+                'value'         => $appellations[$index] ?? '',
+                'template_code' => $templateCode,
+            ]);
+        }
+    }
+
+    return $this->response->setJSON([
+        'status' => 'success',
+        'message' => 'Proje başarıyla güncellendi.',
+        'redirect' => base_url('user/projects/detay/' . $projectId)
+    ]);
+}
+
+
     public function projectdetay($project_id)
     {
         $projectModel       = new ProjectModel();
@@ -296,41 +478,66 @@ class ProjectController extends BaseController
 
 
         if ($actionCode == "duzeltmeok") {
+            // Süreç kaydını oluştur
             $processActionModel->insert($processData);
-
-            $filePaths = [];
-            foreach ($files as $file) {
-                if (!$file->isValid() || $file->hasMoved() || $file->getExtension() !== 'docx') {
-                    return $this->response->setJSON([
-                        'success' => false,
-                        'message' => lang('Main.geçersiz_taşınmış_dosya')
-                    ]);
-                }
-
-
-                foreach ($filePaths as $filePath) {
-
-                    $data = [
-                        'application_id' => $appid,
-                        'user_id' => session()->get('user_id'),
-                        'application_processes_id' => $processActionModel->getInsertID(),
-                        'processes_code' => $processCode,
-                        'action_code' => $actionCode,
-                        'application_processes_values' => $description,
-                        'file_path' => $filePath,
-                        'created_at' => date('Y-m-d H:i:s'),
-                        'updated_at' => date('Y-m-d H:i:s'),
-                    ];
-
-                    $applicationProcessValuesModel->insert($data);
-                }
-
-                return $this->response->setJSON([
-                    'success' => true,
-                    'message' => lang('Main.işlem_başarıyla_kaydedildi')
-                ]);
+            $processId = $processActionModel->getInsertID();
+        
+            $uploadDir = WRITEPATH . 'uploads/applications/';
+            if (!is_dir($uploadDir)) {
+                mkdir($uploadDir, 0777, true);
             }
+        
+            $filePaths = [];
+        
+            // Çoklu dosya kontrolü
+            if (!empty($files)) {
+                foreach ($files as $file) {
+                    if (!$file->isValid() || $file->hasMoved() || $file->getExtension() !== 'docx') {
+                        return $this->response->setJSON([
+                            'success' => false,
+                            'message' => lang('Main.geçersiz_taşınmış_dosya')
+                        ]);
+                    }
+        
+                    // Benzersiz isimle taşı
+                    $fileName = uniqid('app_', true) . '.' . $file->getExtension();
+                    $file->move($uploadDir, $fileName);
+        
+                    $filePaths[] = $fileName;
+                }
+            }
+        
+            // Dosya veya açıklama kayıtları
+            // Eğer dosya yüklenmemişse file_path null olabilir
+            if (empty($filePaths)) {
+                $filePaths[] = null;
+            }
+        
+            foreach ($filePaths as $filePath) {
+                $data = [
+                    'application_id' => $appid,
+                    'user_id' => session()->get('user_id'),
+                    'application_processes_id' => $processId,
+                    'processes_code' => $processCode,
+                    'action_code' => $actionCode,
+                    'application_processes_values' => $description ?: null,
+                    'file_path' => $filePath,
+                    'created_at' => date('Y-m-d H:i:s'),
+                    'updated_at' => date('Y-m-d H:i:s'),
+                ];
+        
+                $applicationProcessValuesModel->insert($data);
+            }
+
+            log_message('debug', 'Gelen action_code: ' . $actionCode);
+
+        
+            return $this->response->setJSON([
+                'success' => true,
+                'message' => lang('Main.işlem_başarıyla_kaydedildi')
+            ]);
         }
+        
     }
 
 

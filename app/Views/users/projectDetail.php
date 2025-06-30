@@ -206,14 +206,15 @@
     <!-- SweetAlert2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-        document.querySelectorAll('button[data-action-code="duzeltmeok"]').forEach(function(button) {
-            button.addEventListener('click', function() {
-                var appid = this.getAttribute('data-app-id');
-                if (appid) {
-                    window.location.href = '/application/update/' + appid;
-                } else {}
-            });
-        });
+       document.querySelectorAll('button[data-action-code="duzeltmeok"]').forEach(function(button) {
+    button.addEventListener('click', function() {
+        var projectId = this.getAttribute('data-project-id') || this.getAttribute('data-bks-id');
+        if (projectId) {
+            window.location.href = '/duzenle/' + projectId;
+        }
+    });
+});
+
     </script>
 
     <?= $this->endSection() ?>

@@ -64,7 +64,12 @@ class RoleModel extends Model
     }
     public function getRoleIdByUserId($userId)
     {
-        $result = $this->where('id', $userId)->first();
-        return $result ? $result['role_id'] : null;
+        $result = $this->db->table('user_roles')
+            ->where('user_id', $userId)
+            ->get()
+            ->getRowArray();
+    
+        return $result && isset($result['role_id']) ? $result['role_id'] : null;
     }
+    
 }
